@@ -1,0 +1,84 @@
+.rewievs{
+    padding-bottom: 130px;
+    .pageTitle{
+        padding: 0;
+    }
+    .rewievsSlider{
+        .rewievsSliderItem{
+            margin: 50px auto;
+            .rewievsSliderItemCenter{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                background: #FFF;
+                padding: 30px;
+                box-shadow: 0px 25px 20px -6px rgba(212, 212, 212, 0.5);
+                max-width: 90%;
+                margin: 0 auto;
+                .rewievsSliderItemDescription{
+                    padding-left: 15px;
+                    h6{
+                        font-size: 16px;
+                    }
+                    p{
+                        line-height: 20px;
+                        padding-top: 5px;
+                    }
+                }
+            }
+            
+        }
+    }
+    .slick-slider{
+        .slick-arrow{
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+            background: linear-gradient(180deg, #7C28D6 0%, #A550DD 100%);
+            box-shadow: 0px 0px 10px 0px rgba(208, 208, 208, 0.50);
+            &::before{
+                transform: translate(-50%, -50%);
+            }
+        }
+        .slick-prev{
+            left: 50%;
+            transform: translateX(-50px);
+            bottom: -30px;
+            top: auto;
+            &:before{
+                content: '';
+                position: absolute;
+                background-image: url(../../public/Images/svg/left.svg);
+                width: 9px;
+                height: 17px;
+            }
+            
+        }
+        .slick-next{
+            right: 50%;
+            transform: translateX(50px);
+            bottom: -30px;
+            top: auto;
+            &::before{
+                content: '';
+                position: absolute;
+                background-image: url(../../public/Images/svg/right.svg);
+                width: 9px;
+                height: 17px;
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 768px){
+    .rewievs{
+        padding: 60px 0 100px;
+        .rewievsSlider{
+            .rewievsSliderItem{
+                margin:30px 0;
+            }
+        }
+    }
+}

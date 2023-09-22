@@ -1,0 +1,90 @@
+.videoSection{
+    padding: 0 0 100px;
+    .videoBg{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        transform: translateY(100px);
+        .modal-video{
+            background-color: transparent !important;
+        }
+        .videoButtonArea{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            .videoButton{
+                background-color: transparent;
+                box-shadow: none;
+                border: none;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .videoSectionBottom{
+        background: linear-gradient(130deg, #7C28D6 11.77%, #A550DD 91.89%);
+        padding: 200px 0 100px;
+        .videoSectionBottomItems{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .videoSectionBottomItem{
+                text-align: center;
+                h6{
+                    font-size: 18px;
+                    color: #FFF;
+                    font-weight: 400;
+                    padding: 10px 0 5px;
+                }
+                h4{
+                    color: #FFF;
+                    font-weight: 300;
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .videoSection{
+        padding: 0;
+        .videoBg{
+            transform: translateY(50px);
+            .videoSectionBg{
+                max-width: 90%;
+                object-fit: cover;
+                height: 50%;
+            }
+            .videoButtonArea{
+                .videoButton{
+                    img{
+                        max-width: 50px;
+                    }
+                }
+            }
+        }
+        .videoSectionBottom{
+            padding:100px 0 0;
+            .videoSectionBottomItems{
+                flex-wrap: wrap;
+                img{
+                    max-width: 35px;
+                }
+                .videoSectionBottomItem{
+                    padding-bottom: 30px;
+                    flex: 1 1 150px;
+                }
+                .videoSectionBottomItemDescription{
+                    h6{
+                        font-size: 16px;
+                        padding: 5px 0;
+                    }
+                }
+            }
+            
+        }
+    }
+}

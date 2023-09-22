@@ -1,0 +1,39 @@
+$color-white: #ffffff;
+$color-black: #363636;
+$color-light: #808080;
+$f-size-16:16px;
+
+body{
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    color: $color-black;
+    font-size: $f-size-16;
+    h2{
+        color: $color-black;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 45px;
+    }
+    p{
+        color: $color-light;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .container{
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    body{
+        h2{
+            font-size: 24px;
+        }
+        .container{
+            max-width: 100%;
+        }
+    }
+}
